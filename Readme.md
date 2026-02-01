@@ -95,17 +95,17 @@ root/
 ## ⚙️ Environment Variables
 ### Backend (server/.env)
 - PORT=5000
-- MONGODB_URI=your_mongodb_atlas_connection_string
+- MONGODB_URI=mongodb+srv://eatoesAdmin:sanjay@eatoesadmin.pxja2rm.mongodb.net/?appName=eatoesAdmin
 - NODE_ENV=development
 
 ### Frontend (client/.env)
-- VITE_API_URL=http://localhost:5000
+- VITE_API_URL=https://eatos.netlify.app/
 
 ---
 ## 🚀 Local Setup
 ### 1️⃣ Clone Repository
 ```
- git clone https://github.com/your-username/eatoes-dashboard.git
+ git clone https://github.com/Sanjay-Kumar-Git/eatoes-Admin.git
  cd eatoes-dashboard
 ```
 ### 2️⃣ Backend Setup
@@ -247,7 +247,7 @@ node scripts/seed.js
 
 ###### 3. Add env variable:
 
-    VITE_API_URL=https://your-backend.onrender.com
+    VITE_API_URL=https://eatoes-admin.onrender.com
 
 
 ###### 4.Deploy
