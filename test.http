@@ -1,0 +1,33 @@
+###
+POST http://localhost:5000/api/menu
+Content-Type: application/json
+
+{
+  "name": "Paneer Butter Masala",
+  "description": "Creamy tomato gravy with paneer",
+  "category": "Main Course",
+  "price": 220,
+  "ingredients": ["Paneer", "Tomato", "Butter", "Cream"],
+  "preparationTime": 15,
+  "imageUrl": "https://example.com/paneer.jpg"
+}
+
+###
+GET http://localhost:5000/api/menu/search?q=paneer
+
+###
+GET http://localhost:5000/api/menu?category=Main Course&availability=true
+
+###
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+  "items": [
+    { "menuItem": "697e5aa3d2088aad88113da6", "quantity":2 }
+  ],
+  "customerName": "Koushik",
+  "tableNumber": 21
+}
+###
+GET http://localhost:5000/api/analytics/top-sellers

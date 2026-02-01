@@ -1,0 +1,116 @@
+/* ================================
+   GLOBAL RESET (SAFE)
+================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ================================
+   BASE TYPOGRAPHY
+================================ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa; /* Bootstrap light background */
+  color: #212529;
+}
+
+/* ================================
+   LINKS (DON'T OVERRIDE BOOTSTRAP)
+================================ */
+a {
+  text-decoration: none;
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #212529;
+}
+
+/* ================================
+   PAGE LAYOUT HELPERS
+================================ */
+.page-container {
+  padding: 1.25rem;
+}
+
+/* ================================
+   CARDS
+================================ */
+.card {
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* ================================
+   TABLE IMPROVEMENTS
+================================ */
+.table th {
+  white-space: nowrap;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* ================================
+   FORM IMPROVEMENTS
+================================ */
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+/* ================================
+   BADGES
+================================ */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.45em 0.6em;
+}
+
+/* ================================
+   MODAL FIX (VITE + BOOTSTRAP)
+================================ */
+.modal {
+  backdrop-filter: blur(2px);
+}
+
+/* ================================
+   UTILITIES
+================================ */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* ================================
+   RESPONSIVE TWEAKS
+================================ */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .page-container {
+    padding: 0.75rem;
+  }
+}
